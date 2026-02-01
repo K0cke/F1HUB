@@ -1,0 +1,162 @@
+html, body {
+    background-color: silver;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   font-family: 'Inter', sans-serif; 
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navigacija {
+    width: 100%;
+    height: 10vh;
+    border-bottom: 5px solid #f10d05;
+    background-color: white;
+}
+
+.navigacija a {
+    color: black;
+    text-decoration: none;
+    padding: 2%;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.navigacija a:hover {
+    color: #f10d05;
+}
+
+.logounav img {
+    width: 10%;
+    height: 75.59px;
+    float: left;
+    object-fit: contain;
+    display: block;
+}
+
+.linkovi {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.linkovi a {
+    padding-left: 3%;
+}
+
+.textnapocetnoj {
+    text-align: center;
+    display: block;
+    font-weight: bolder;
+    font-size: 22px;
+    padding-bottom: 6%;
+}
+
+/* --- Vesti --- */
+.vesti1, .vest2, .vest3 {
+    position: relative; /* ključna stvar */
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.vest2, .vest3 {
+    width: 44%;
+    float: left;
+    margin: 2%;
+}
+
+.vest3 {
+    float: right;
+}
+
+/* Slike */
+#vesthamilton, #vestferrari, #vestverstappen {
+    width: 90%;
+    height: auto;
+    display: block;
+}
+
+#vesthamilton
+{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#vesthamilton:hover,
+#vestferrari:hover,
+#vestverstappen:hover {
+    filter: brightness(45%);
+    transform: scale(1.02);
+    transition: 0.3s ease;
+}
+
+/* Naslovi preko slika */
+.naslovzavest1, .naslovzavest2, .naslovzavest3 {
+    position: absolute;
+    bottom: 10px;   /* uvek uz donju ivicu slike */
+    left: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 10px;
+    background: rgba(0,0,0,0.5); /* da se tekst bolje vidi */
+    max-width: 90%;
+}
+
+.naslovzavest1 {
+  left: 100px;
+}
+
+.naslovzavest2 {
+  left: -10px;
+}
+  
+/* --- Responsive --- */
+@media screen and (max-width: 720px) {
+  .navigacija {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+  }
+
+  .linkovi {
+    text-align: center;
+  }
+
+  .linkovi a {
+    display: block;   
+    padding: 10px 0;
+    font-size: 22px;
+  }
+
+  .logounav img {
+    width: 50%;   
+    height: auto;
+    margin-bottom: 10px;
+    float: none;
+    margin: auto;
+  }
+
+  .textnapocetnoj {
+    font-size: 20px;
+    padding: 20%;
+  }
+
+  .vest2, .vest3 {
+    width: 100%;
+    float: none;
+    margin: 0 0 20px 0;
+  }
+
+  .naslovzavest1, .naslovzavest2, .naslovzavest3 {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
