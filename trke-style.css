@@ -84,3 +84,115 @@ object-fit: contain; /* cela staza se vidi */
  margin: 10px auto;
  width: 40px; /* mala ikonica zastave */
  height: auto; }
+
+
+
+ .monaco { 
+  display: block;
+  margin: 30px auto 10%;
+  width: 90%; 
+  height: auto; /* prilagodljiva visina */ 
+  background: #fff; 
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+   } 
+  .monaco:hover {
+   transform: scale(1.05); box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
+  } 
+  
+  #monacotext { 
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  margin: 10px 0;
+  display: block;
+ } 
+  
+  #stazamonaco {
+  width: 90%;
+  height: auto;
+  display: block;
+   margin: 10px auto;
+  object-fit: contain; /* cela staza se vidi */
+   } 
+   
+   #zastavamonaco {
+   display: block;
+   margin: 10px auto;
+   width: 40px; /* mala ikonica zastave */
+   height: auto; 
+  }
+
+  .bahrain {
+    display: block;
+  margin: 30px auto 10%;
+  width: 90%; 
+  height: auto; /* prilagodljiva visina */ 
+  background: #fff; 
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }
+
+  .bahrain:hover {
+    transform: scale(1.05); box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+
+  #bahraintext {
+    text-decoration: none;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  margin: 10px 0;
+  display: block;
+  }
+
+  #stazabahrain {
+    width: 90%;
+  height: auto;
+  display: block;
+   margin: 10px auto;
+  object-fit: contain; /* cela staza se vidi */
+  }
+
+  #zastavabahrain {
+    display: block;
+    margin: 10px auto;
+    width: 40px; /* mala ikonica zastave */
+    height: auto;
+  }
+
+
+
+
+
+
+  
+
+ @media screen and (max-width: 720px) {
+    .navigacija {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1%;
+    }
+  
+    .linkovi {
+      text-align: center;
+    }
+  
+    .linkovi a {
+      display: block;   
+      padding: 10px 0;
+      font-size: 22px;
+    }
+  
+    .logounav img {
+      width: 50%;   
+      height: auto;
+      margin-bottom: 10px;
+      float: none;
+      margin: auto;
+    }
+}
