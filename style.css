@@ -79,6 +79,7 @@ h2 {
     width: 90%;
     height: auto;
     display: block;
+    cursor: default;
 }
 
 #vesthamilton
@@ -93,6 +94,7 @@ h2 {
     filter: brightness(45%);
     transform: scale(1.02);
     transition: 0.3s ease;
+    cursor: pointer;
 }
 
 /* Naslovi preko slika */
@@ -106,6 +108,7 @@ h2 {
     padding: 10px;
     background: rgba(0,0,0,0.5); /* da se tekst bolje vidi */
     max-width: 90%;
+    
 }
 
 .naslovzavest1 {
@@ -113,8 +116,25 @@ h2 {
 }
 
 .naslovzavest2 {
-  left: -10px;
+  font-size: 13px;
 }
+
+.naslovzavest3 {
+  font-size: 13px;
+}
+
+
+.vesti1 a h2, .vest2 a h2, .vest3 a h2 {
+  cursor: default; /*normalan kursor*/
+  text-decoration: white; 
+  color: #fff;  /*boja texta si ostaje bela*/
+}
+
+.vesti1 a h2:hover, .vest2 a h2:hover, .vest3 a h2:hover {
+  cursor: pointer; /* pojavi se kursor za klik */
+  text-decoration: underline; /* pojavi se underline */ }
+
+
   
 /* --- Responsive --- */
 @media screen and (max-width: 720px) {
@@ -156,7 +176,12 @@ h2 {
   }
 
   .naslovzavest1, .naslovzavest2, .naslovzavest3 {
-    font-size: 14px;
+    font-size: 10px;
     padding: 8px;
+  }
+
+  .naslovzavest1 {
+    left: 22px;
+    font-size: 8px;
   }
 }
