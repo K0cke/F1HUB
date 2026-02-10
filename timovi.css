@@ -1,0 +1,135 @@
+html, body {
+    background-color: silver;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   font-family: 'Inter', sans-serif; 
+}
+
+.navigacija {
+    width: 100%;
+    height: 10vh;
+    border-bottom: 5px solid #f10d05;
+    background-color: white;
+}
+
+.navigacija a {
+    color: black;
+    text-decoration: none;
+    padding: 2%;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.navigacija a:hover {
+    color: #f10d05;
+}
+
+.logounav img {
+    width: 10%;
+    height: 75.59px;
+    float: left;
+    object-fit: contain;
+    display: block;
+}
+
+.linkovi {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.linkovi a {
+    padding-left: 3%;
+}
+
+.timovi {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px
+
+}
+
+.mercedes, .ferrari, .alpine, .astonmartin, .williams, .audi, .cadillac, .haas, .mclaren, .racingbulls, .redbull {
+display: block;
+position:relative;
+margin: 30px auto 4%;
+width: 90%; 
+height: auto; 
+background-color: #00D2BE; 
+border-radius: 8px;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+cursor: pointer;
+}
+
+.redbull {width: 55%;}
+
+.ferrari {background-color: #DC0000;}
+.alpine { background-color: #0090FF;}
+.astonmartin { background-color: #006F62;}
+.williams { background-color: #005AFF; }
+.audi { background-color: #900000; }
+.haas { background-color: #2B2B2B;}
+.cadillac { background-color: #2B2B2B;}
+.mclaren { background-color: #FF8700; }
+.racingbulls { background-color: #1E41FF; }
+.redbull { background-color: #1E41FF; }
+
+
+.mercedes:hover { transform: scale(1.05); box-shadow: 0 5px 15px #00D2BE}
+.ferrari:hover {transform: scale(1.05);  box-shadow: 0 5px 15px #DC0000;}
+.alpine:hover {transform: scale(1.05); box-shadow: 0 5px 15px #0090FF;}
+.astonmartin:hover {transform: scale(1.05); box-shadow: 0 5px 15px  #006F62;}
+.williams:hover {transform: scale(1.05); box-shadow: 0 5px 15px #005AFF;}
+.audi:hover {transform: scale(1.05); box-shadow: 0 5px 15px #900000;}
+.haas:hover {transform: scale(1.05); box-shadow: 0 5px 15px #2B2B2B;}
+.cadillac:hover {transform: scale(1.05); box-shadow: 0 5px 15px #2B2B2B;}
+.mclaren:hover {transform: scale(1.05); box-shadow: 0 5px 15px #FF8700;}
+.racingbulls:hover {transform: scale(1.05); box-shadow: 0 5px 15px #1E41FF;}
+.redbull:hover { transform: scale(1.05); box-shadow: 0 5px 15px #1E41FF; }
+
+
+#mercedesbolid, #ferraribolid, #alpinebolid, #astonmartinbolid, #williamsbolid, #audibolid, #haasbolid, #cadillacbolid, #haasbolid, #mclarenbolid, #racingbullsbolid, #redbullbolid 
+{
+width: 90%;
+height: auto;
+display: block;
+ margin: 10px auto;
+object-fit: contain;
+}
+
+#mercedesznak, #ferrariznak, #alpineznak, #astonmartinznak, #williamsznak, #audiznak, #haasznak, #cadillacznak, #haasznak, #mclarenznak, #racingbullsznak, #redbullznak 
+{
+    position: absolute;
+    top: 10px;  
+    left: 520px;
+    background: rgba(0,0,0,0.2); 
+    max-width: 7%;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+
+
+#redbullznak {top:10px; left: 640px;}
+
+#mercedestext, #ferraritext, #alpinetext, #astonmartintext, #williamstext, #auditext, #haastext, #cadillactext, #haastext, #mclarentext, #racingbullstext, #redbulltext 
+{
+text-decoration: none;
+text-align: center;
+text-transform: uppercase;
+color: #000;
+font-weight: bold;
+margin: 10px 0;
+display: block; 
+}
+
+
+
+
+
+@media screen and (max-width: 720px) 
+{ .timovi 
+    { grid-template-columns: repeat(1, 1fr); } 
+}
