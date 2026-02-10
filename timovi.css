@@ -129,7 +129,85 @@ display: block;
 
 
 
-@media screen and (max-width: 720px) 
-{ .timovi 
-    { grid-template-columns: repeat(1, 1fr); } 
+@media screen and (max-width: 720px)
+{    
+    
+.navigacija
+ {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1%;
+    }
+  
+.linkovi{text-align: center;}
+  
+.linkovi a 
+{
+      display: block;   
+      padding: 10px 0;
+      font-size: 22px;
+}
+  
+.logounav img 
+{
+      width: 50%;   
+      height: auto;
+      margin-bottom: 10px;
+      float: none;
+      margin: auto;
+    }
+
+.timovi 
+{     grid-template-columns: repeat(1, 1fr);
+      gap: 15px;
+      padding: 10px;
+    }
+
+    .redbull
+    { width: 83%;
+     margin: 40px auto;
+      transform: scale(1.05);
+       box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+     } 
+     #redbullznak 
+     { position: static;
+        display: block; 
+        margin: 0 auto 15px; 
+        max-width: 25%;
+        border-radius: 50%;
+     } 
+     #redbullbolid 
+     { width: 100%;
+        margin: 0 auto; 
+        display: block; 
+    } 
+    #redbulltext 
+    { font-size: 18px;
+      margin: 10px 0;
+      text-align: center; 
+    } 
+
+    #mercedesznak, #ferrariznak, #alpineznak, #astonmartinznak, #williamsznak, #audiznak, #haasznak, #cadillacznak, #mclarenznak, #racingbullsznak, #redbullznak
+    { 
+        position: static; 
+        display: block; 
+        margin: 0 auto 10px;
+        max-width: 20%;
+        border-radius: 50%; 
+    } 
+    #mercedestext, #ferraritext, #alpinetext, #astonmartintext, #williamstext, #auditext, #haastext, #cadillactext, #mclarentext, #racingbullstext, #redbulltext 
+    { font-size: 16px; 
+      margin: 8px 0;
+    } 
+    #mercedesbolid, #ferraribolid, #alpinebolid, #astonmartinbolid, #williamsbolid, #audibolid, #haasbolid, #cadillacbolid, #mclarenbolid, #racingbullsbolid, #redbullbolid 
+    { width: 100%; 
+      margin: 0 auto;
+      display: block;
+    }
+
+
+    
+
 }
