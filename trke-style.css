@@ -46,9 +46,9 @@ body {
 
 .trke { 
 display: grid;
-grid-template-columns: repeat(3, 1fr); /* malo širi minimum */ 
+grid-template-columns: repeat(3, 1fr); /* 3 u redu, na 4. se spusta u novi red */ 
 gap: 20px;
-padding: 20px; 
+padding: 20px;
 }
 
 .spa { 
@@ -157,6 +157,161 @@ object-fit: contain; /* cela staza se vidi */
   }
 
   #zastavabahrain {
+    display: block;
+    margin: 10px auto;
+    width: 40px; /* mala ikonica zastave */
+    height: auto;
+  }
+
+
+  .australia {
+    display: block;
+  margin: 30px auto 10%;
+  width: 90%; 
+  height: auto; /* prilagodljiva visina */ 
+  background: #fff; 
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }
+
+  .australia:hover {
+    transform: scale(1.05); box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+
+  #australiatext {
+    text-decoration: none;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  margin: 10px 0;
+  display: block;
+  }
+
+  #stazaustralia {
+    width: 90%;
+  height: auto;
+  display: block;
+   margin: 10px auto;
+  object-fit: contain; /* cela staza se vidi */
+  }
+
+  #zastavaaustralia {
+    display: block;
+    margin: 10px auto;
+    width: 40px; /* mala ikonica zastave */
+    height: auto;
+  }
+
+
+  .china {
+    display: block;
+  margin: 30px auto 10%;
+  width: 90%; 
+  height: auto; /* prilagodljiva visina */ 
+  background: #fff; 
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }
+
+  .china:hover {
+    transform: scale(1.05); box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+
+  #chinatext {
+    text-decoration: none;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  margin: 10px 0;
+  display: block;
+  }
+
+  #stazachina {
+    width: 90%;
+  height: auto;
+  display: block;
+   margin: 10px auto;
+  object-fit: contain; /* cela staza se vidi */
+  }
+
+  #zastavachina {
+    display: block;
+    margin: 10px auto;
+    width: 40px; /* mala ikonica zastave */
+    height: auto;
+  }
+
+  .japan {
+    display: block;
+  margin: 30px auto 10%;
+  width: 90%; 
+  height: auto; /* prilagodljiva visina */ 
+  background: #fff; 
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }
+
+  .japan:hover {
+    transform: scale(1.05); box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+
+  #japantext {
+    text-decoration: none;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  margin: 10px 0;
+  display: block;
+  }
+
+  #stazajapan {
+    width: 90%;
+  height: auto;
+  display: block;
+   margin: 10px auto;
+  object-fit: contain; /* cela staza se vidi */
+  }
+
+  #zastavajapan {
+    display: block;
+    margin: 10px auto;
+    width: 40px; /* mala ikonica zastave */
+    height: auto;
+  }
+
+
+  .arabia {
+    display: block;
+  margin: 30px auto 10%;
+  width: 90%; 
+  height: auto; /* prilagodljiva visina */ 
+  background: #fff; 
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }
+
+  .arabia:hover {
+    transform: scale(1.05); box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+
+  #arabiatext {
+    text-decoration: none;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  margin: 10px 0;
+  display: block;
+  }
+
+  #stazaarabia {
+    width: 90%;
+  height: auto;
+  display: block;
+   margin: 10px auto;
+  object-fit: contain; /* cela staza se vidi */
+  }
+
+  #zastavaarabia {
     display: block;
     margin: 10px auto;
     width: 40px; /* mala ikonica zastave */

@@ -67,11 +67,16 @@ h2 {
 .vest2, .vest3 {
     width: 44%;
     float: left;
-    margin: 2%;
+    margin-top: 2%;
 }
 
 .vest3 {
     float: right;
+    margin-right: 0.5%;
+}
+
+.vest2 {
+  margin-left: 5%;
 }
 
 /* Slike */
@@ -116,11 +121,11 @@ h2 {
 }
 
 .naslovzavest2 {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .naslovzavest3 {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 
