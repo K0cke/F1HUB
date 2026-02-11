@@ -177,7 +177,21 @@ h2 {
   .vest2, .vest3 {
     width: 100%;
     float: none;
-    margin: 0 0 20px 0;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .vest3 {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+  }
+
+  #vestverstappen 
+  {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 
   .naslovzavest1, .naslovzavest2, .naslovzavest3 {
@@ -188,5 +202,10 @@ h2 {
   .naslovzavest1 {
     left: 22px;
     font-size: 8px;
+  }
+
+  .naslovzavest3 
+  {
+    left: 30px
   }
 }
