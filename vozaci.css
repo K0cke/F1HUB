@@ -1,0 +1,195 @@
+html, body {
+    background-color: silver;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   font-family: 'Inter', sans-serif; 
+}
+
+.navigacija {
+    width: 100%;
+    height: 10vh;
+    border-bottom: 5px solid #f10d05;
+    background-color: white;
+}
+
+.navigacija a {
+    color: black;
+    text-decoration: none;
+    padding: 2%;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.navigacija a:hover {
+    color: #f10d05;
+}
+
+.logounav img {
+    width: 10%;
+    height: 75.59px;
+    float: left;
+    object-fit: contain;
+    display: block;
+}
+
+.linkovi {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.linkovi a {
+    padding-left: 3%;
+}
+
+
+.vozaci {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin-top: 30px;
+    padding: 20px;
+
+}
+
+.hamilton, .leclerc, .verstappen, .hadjar {
+    position: relative;
+    width: 100%;
+    min-height: 420px;
+    background-color: #DC0000;
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.verstappen, .hadjar {background-color: #1E41FF;}
+
+
+
+
+.hamilton:hover, .leclerc:hover
+{ transform: scale(1.05);  box-shadow: 0 5px 15px #DC0000;}
+.verstappen:hover, .hadjar:hover {transform: scale(1.05);  box-shadow: 0 5px 15px #1E41FF;} 
+.hamilton:hover .ime, .leclerc:hover .ime, .verstappen:hover .ime, .hadjar:hover .ime 
+{text-decoration:underline 1.5px white;}
+.tim:hover
+{text-decoration:underline 1.5px white;}
+
+.ime
+{padding-left: 5%; margin:0;}
+
+#slikahamilton, #slikaleclerc, #slikaverstappen, #slikahadjar {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    margin: 15px 0;
+    display: block;
+}
+
+
+.zastava {
+    position: absolute;
+    top: 10px;  
+    right: 10px;
+    background: rgba(0,0,0,0.2); 
+    max-width: 20%;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+.broj
+{padding-left: 12%; margin: 0;}
+
+.tim
+{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+
+@media screen and (max-width: 720px) {
+
+    .navigacija
+ {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1%;
+    }
+  
+.linkovi{text-align: center;}
+  
+.linkovi a 
+{
+      display: block;   
+      padding: 10px 0;
+      font-size: 22px;
+}
+  
+.logounav img 
+{
+      width: 50%;   
+      height: auto;
+      margin-bottom: 10px;
+      float: none;
+      margin: auto;
+    }
+
+  .vozaci {
+    grid-template-columns: 1fr; /* jedna kolona */
+    gap: 20px;                  /* razmak između kartica */
+    padding: 10px;              /* manji padding da stane lepo */
+  }
+
+  .hamilton, .leclerc, .verstappen, .hadjar {
+    width: 80%;                /* kartica zauzima celu širinu */
+    min-height: auto;           /* visina se prilagođava sadržaju */
+    padding: 15px;              /* unutrašnji razmak */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ime {
+    font-size: 18px;            /* malo manji font na telefonu */
+    text-align: center;         /* centrirano ime */
+    margin-bottom: 5px;
+  }
+
+  .broj {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  #slikahamilton, #slikaleclerc, #slikaverstappen, #slikahadjar {
+    width: 80%;                 /* slika malo manja od širine kartice */
+    height: auto;
+    margin: 0 auto 10px;        /* centrirana i razmak ispod */
+    display: block;
+    object-fit: contain;
+  }
+
+  .tim {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .zastava {
+    top: 5px;
+    right: 5px;
+    max-width: 15%;             /* manja zastava na telefonu */
+  }
+}
+
+
+
