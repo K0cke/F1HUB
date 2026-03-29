@@ -54,7 +54,8 @@ body {
 
 }
 
-.hamilton, .leclerc, .verstappen, .hadjar {
+.hamilton, .leclerc, .verstappen, .hadjar, .russel, .antonelli, .norris, .piastri, .ocon, .bearman, .gasly, .colapinto, .lawson, .lindblad, .hulkenberg, .bortoleto, 
+.sainz, .albon, .perez, .bottas, .alonso, .stroll {
     position: relative;
     width: 100%;
     min-height: 420px;
@@ -65,23 +66,64 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
-.verstappen, .hadjar {background-color: #1E41FF;}
+
+.alonso  {
+  grid-column: 2 / span 1; /* zauzimaju srednje dve kolone */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.verstappen, .hadjar {background-color: #1E41FF}
+.russel, .antonelli {background-color: #00D2BE}
+.ocon, .bearman {background-color: #2B2B2B}
+.norris, .piastri {background-color: #FF8700}
+.gasly, .colapinto {background-color: #0090FF}
+.hulkenberg, .bortoleto {background-color: #900000}
+.lawson, .lindblad {background-color: #1E41FF}
+.sainz, .albon {background-color: #005AFF}
+.perez, .bottas {background-color: #2B2B2B}
+.alonso, .stroll {background-color: #006F62}
+
+
+.ferrari {background-color: #DC0000;}
+.alpine { background-color: #0090FF;}
+.astonmartin { background-color: #006F62;}
+.williams { background-color: #005AFF; }
+.audi { background-color: #900000; }
+.haas { background-color: #2B2B2B;}
+.cadillac { background-color: #2B2B2B;}
+.mclaren { background-color: #FF8700; }
+.racingbulls { background-color: #1E41FF; }
+.redbull { background-color: #1E41FF; }
 
 
 
 
-.hamilton:hover, .leclerc:hover
-{ transform: scale(1.05);  box-shadow: 0 5px 15px #DC0000;}
-.verstappen:hover, .hadjar:hover {transform: scale(1.05);  box-shadow: 0 5px 15px #1E41FF;} 
-.hamilton:hover .ime, .leclerc:hover .ime, .verstappen:hover .ime, .hadjar:hover .ime 
+.hamilton:hover, .leclerc:hover { transform: scale(1.05);  box-shadow: 0 5px 15px #DC0000;}
+.verstappen:hover, .hadjar:hover {transform: scale(1.05);  box-shadow: 0 5px 15px #1E41FF;}
+.russel:hover, .antonelli:hover {transform: scale(1.05);  box-shadow: 0 5px 15px #00D2BE;}
+.norris:hover, .piastri:hover {transform: scale(1.05);  box-shadow: 0 5px 15px #FF8700;}
+.ocon:hover, .bearman:hover {transform: scale(1.05);  box-shadow: 0 5px 15px #2B2B2B;}
+.gasly:hover, .colapinto:hover {transform: scale(1.05);  box-shadow: 0 5px 15px #0090FF;}  
+.lawson:hover, .lindblad:hover {transform: scale(1.05);  box-shadow: 0 5px 15px #1E41FF;}
+.hulkenberg:hover, .bortoleto:hover {transform: scale(1.05);  box-shadow: 0 5px 15px #900000;}
+.sainz:hover, .albon:hover {transform: scale(1.05);  box-shadow: 0 5px 15px #005AFF;}
+.perez:hover, .bottas:hover {transform: scale(1.05);  box-shadow: 0 5px 15px #2B2B2B;}
+.alonso:hover, .stroll:hover {transform: scale(1.05);  box-shadow: 0 5px 15px #006F62;}
+
+
+.hamilton:hover .ime, .leclerc:hover .ime, .verstappen:hover .ime, .hadjar:hover .ime, .russel:hover .ime, .antonelli:hover .ime, .norris:hover .ime, .piastri:hover .ime,
+.ocon:hover .ime, .bearman:hover .ime, .gasly:hover .ime, .colapinto:hover .ime, .lawson:hover .ime, .lindblad:hover .ime, .hulkenberg:hover .ime, .bortoleto:hover .ime,
+.sainz:hover .ime, .albon:hover .ime, .perez:hover .ime, .bottas:hover .ime, .alonso:hover .ime, .stroll:hover .ime
 {text-decoration:underline 1.5px white;}
-.tim:hover
-{text-decoration:underline 1.5px white;}
+.tim:hover {text-decoration:underline 1.5px white;}
 
 .ime
 {padding-left: 5%; margin:0;}
 
-#slikahamilton, #slikaleclerc, #slikaverstappen, #slikahadjar {
+#slikahamilton, #slikaleclerc, #slikaverstappen, #slikahadjar, #slikarussel, #slikaantonelli, #slikanorris, #slikapiastri, #slikaocon, #slikabearman, #slikagasly,
+#slikacolapinto, #slikalawson, #slikalindblad, #slikabortoleto, #slikahulkenberg, #slikasainz, #slikaalbon, #slikaperez, #slikabottas, #slikaalonso, #slikastroll {
     width: 100%;
     height: 250px;
     object-fit: contain;
@@ -149,13 +191,23 @@ body {
     padding: 10px;              /* manji padding da stane lepo */
   }
 
-  .hamilton, .leclerc, .verstappen, .hadjar {
+  .hamilton, .leclerc, .verstappen, .hadjar, .russel, .antonelli, .norris, .piastri, .ocon, .bearman, .gasly, .colapinto, .lawson, .lindblad, .hulkenberg, .bortoleto,
+  .sainz, .albon, .perez, .bottas, .alonso, .stroll {
     width: 80%;                /* kartica zauzima celu širinu */
     min-height: auto;           /* visina se prilagođava sadržaju */
     padding: 15px;              /* unutrašnji razmak */
     margin-left: auto;
     margin-right: auto;
   }
+
+  @media screen and (max-width: 720px) {
+  .alonso, .stroll {
+    grid-column: 1 / 1; /* jedna kolona */
+    width: 80%;         /* zauzimaju 80% širine */
+    margin: 0 auto;
+  }
+}
+
 
   .ime {
     font-size: 18px;            /* malo manji font na telefonu */
@@ -169,7 +221,8 @@ body {
     margin-bottom: 10px;
   }
 
-  #slikahamilton, #slikaleclerc, #slikaverstappen, #slikahadjar {
+  #slikahamilton, #slikaleclerc, #slikaverstappen, #slikahadjar, #slikarussel, #slikaantonelli, #slikanorris, #slikapiastri, #slikaocon, #slikabearman, #slikagasly, 
+  #slikacolapinto, #slikalawson, #slikalindblad, #slikahulkenberg, #slikabortoleto, #slikasainz, #slikaalbon, #slikaperez, #slikabottas, #slikaalonso, #slikastroll {
     width: 80%;                 /* slika malo manja od širine kartice */
     height: auto;
     margin: 0 auto 10px;        /* centrirana i razmak ispod */
