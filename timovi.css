@@ -131,6 +131,48 @@ display: block;
 
 
 
+.footer{
+    margin-top: 10%;
+    width: 98%;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 1%;
+}
+
+.footer p{
+    margin-bottom: 0;
+}
+
+
+.korisnilinkovi a{
+    
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.instagram:hover {
+    color: #f10d05;
+}
+
+.facebook:hover {
+    color: #f10d05;
+}
+
+.x:hover {
+    color: #f10d05;
+}
+
+h3{
+    color: white;
+}
+
+.ufuter {
+    color: white;
+}
+
+
 
 
 @media screen and (max-width: 720px)
